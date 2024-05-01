@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {
+      "id": 1714552346940,
+      "title": "Do your homework",
+      "completed": false
+    },
+    {
+      "id": 1714552432153,
+      "title": "Watch TypeScript videos on You Tube",
+      "completed": false
+    }
+  ]
+}
