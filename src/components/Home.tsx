@@ -75,7 +75,7 @@ const Home = () => {
 		<div>
 			<div className="containerBox">
 				<div style={{ textAlign: "center" }}>
-					<span>
+					<span style={{ color: "yellow" }}>
 						{currentTime.toLocaleDateString("en-US", {
 							weekday: "long",
 							year: "numeric",
@@ -88,11 +88,16 @@ const Home = () => {
 					</span>
 				</div>
 
-				<h1 className="text-center">TODO APP</h1>
+				<div className="text-center">
+					<h1>TODO APP</h1>
+					<span>
+						by <strong style={{ color: "yellow" }}>Shahboz Nabiyev</strong>
+					</span>
+				</div>
 				<form
 					style={{
 						margin: "60px auto",
-						width: "400px",
+						width: "800px",
 					}}
 					onSubmit={handleSubmit}>
 					<div
@@ -104,7 +109,7 @@ const Home = () => {
 							margin: "0 auto",
 						}}>
 						<div style={{ display: "flex", flexDirection: "column" }}>
-							<FormControl type="text" />
+							<FormControl type="text" className="w-100" />
 						</div>
 						<Button variant="success" type="submit">
 							Add
@@ -134,7 +139,7 @@ const Home = () => {
 							}}>
 							<div>
 								{editingTaskId === task.id ? (
-									<div style={{display: "flex"}}>
+									<div style={{ display: "flex" }}>
 										<FormCheck
 											style={{}}
 											type="checkbox"
